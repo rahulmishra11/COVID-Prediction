@@ -38,7 +38,7 @@ model_classifier.add(MaxPooling2D(pool_size=(2,2)))
 
 
 model_classifier.add(Flatten())
-model_classifier.add(Dense(64,activation='relu',kernel_initializer='glorot_uniform'))
+model_classifier.add(Dense(64,activation='relu'))
 model_classifier.add(Dropout(0.5))
 model_classifier.add(Dense(1,activation='sigmoid'))
 
